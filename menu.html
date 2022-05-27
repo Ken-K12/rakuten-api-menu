@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>献立おすすめ</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <label for="category">表示するカテゴリを選択してください</label>
+  <select id="category">
+    <option value="10" selected>肉</option>
+    <option value="11">魚</option>
+    <option value="12">野菜</option>
+  </select>
+  <div>
+    <input type="button" value="選択" id="checkButton">
+    </div>
+  <ul id="recipe_list"></ul>
+  <script src="./credential.js"></script>
+  <script src="./getMenu.js"></script>
+</body>
+</html>
